@@ -28,7 +28,7 @@ A responsive and visually appealing three-column preview card layout built with 
 | Screen Size | Layout     |
 |-------------|------------|
 | Desktop     | Three-column layout |
-| Mobile      | Stack layout with rounded corners adjusted |
+| Mobile      | Stack layout (no spacing between cards) |
 
 ---
 
