@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 573px;
+  width: 90%;
+}
+.card {
+  padding: 20px 25px 25px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#SEDANS {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.card h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+}
+.card i {
+  margin-bottom: 20px;
+}
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  margin-top: 20px;
+}
+.card button {
+  margin: 40px 0px 0px 0px;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 15px;
+
+  border: 2px solid transparent;
+}
+.card button:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+#card1 {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  transition: all 0.3s ease-in-out;
+}
+#card1:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+#SUVS {
+  background-color: hsl(184, 100%, 22%);
+}
+#card2 {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  transition: all 0.3s ease-in-out;
+}
+#card2:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+#LUXURY {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+#card3 {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  transition: all 0.3s ease-in-out;
+}
+#card3:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 635px) {
+  .cards {
+    flex-direction: column;
+  }
+  #SUVS {
+    text-align: center;
+  }
+  #SEDANS {
+    border-radius: 12px 12px 0px 0px;
+    text-align: center;
+  }
+  #LUXURY {
+    border-radius: 0px 0px 12px 12px;
+    text-align: center;
+  }
+}
